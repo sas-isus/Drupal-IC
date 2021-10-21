@@ -32,3 +32,6 @@ $local_settings = __DIR__ . "/settings.local.php";
 if (file_exists($local_settings)) {
   include $local_settings;
 }
+if (file_exists(__DIR__ . '/settings.sas.php')) {
+  include __DIR__ . '/settings.sas.php';
+}

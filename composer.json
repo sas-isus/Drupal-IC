@@ -46,7 +46,12 @@
             "file-mapping": {
                 "[project-root]/.editorconfig": false,
                 "[project-root]/pantheon.upstream.yml": false,
-                "[project-root]/.gitattributes": false
+                "[project-root]/.gitattributes": false,
+                "[web-root]/.htaccess": {
+                    "mode": "replace",
+                    "path": "web/core/assets/scaffold/files/htaccess",
+                    "overwrite": false
+                }
             }
         }
     },
