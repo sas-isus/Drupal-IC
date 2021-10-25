@@ -5,11 +5,7 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/pantheon-systems/pantheon_domain_masking"
-          }
+        }
     ],
     "require": {
         "php": ">=7.3",
@@ -58,7 +54,6 @@
         "drupal/panelizer": "^4.4",
         "drupal/panels": "^4.6",
         "drupal/pantheon_advanced_page_cache": "^1.2",
-        "drupal/pantheon_domain_masking": "dev-master",
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
         "drupal/permissions_by_term": "^3.1",
