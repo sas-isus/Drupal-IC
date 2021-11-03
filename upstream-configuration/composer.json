@@ -85,7 +85,8 @@
         "drupal/workbench_moderation": "^1.6",
         "drupal/xls_serialization": "^1.2",
         "simplesamlphp/simplesamlphp": "1.18.8",
-        "drupal/bootstrap": "^3.23"
+        "drupal/bootstrap": "^3.23",
+        "drupal/adminimal_theme": "^1.6"
     },
     "scripts": {
         "post-install-cmd": [
