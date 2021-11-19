@@ -87,5 +87,10 @@
         "simplesamlphp/simplesamlphp": "1.18.8",
         "drupal/bootstrap": "^3.23",
         "drupal/adminimal_theme": "^1.6"
-    }
+    },
+    "scripts": { 
+        "post-install-cmd": [ 
+            "rm -rf ../vendor/simplesamlphp/simplesamlphp/config && ln -sf ../../../web/private/simplesamlphp/config ../vendor/simplesamlphp/simplesamlphp/config && rm -rf ../vendor/simplesamlphp/simplesamlphp/metadata && ln -sf ../../../web/private/simplesamlphp/metadata ../vendor/simplesamlphp/simplesamlphp/metadata"
+        ] 
+      }
 }
