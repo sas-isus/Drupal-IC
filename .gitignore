@@ -105,6 +105,7 @@ upstream/web/
 /web/.htaccess
 /web/INSTALL.txt
 /web/README.txt
+/web/README.md
 /web/autoload.php
 /web/example.gitignore
 /web/index.php
