@@ -83,8 +83,7 @@ upstream/web/
 # that core/assets/vendor and any other vendor directories within contrib or
 # custom module, theme, etc., are not ignored unless you purposely do so.
 /vendor/*
-!/vendor/simplesamlphp/simplesamlphp/config
-!/vendor/simplesamlphp/simplesamlphp/metadata
+!/vendor/simplesamlphp/simplesamlphp/*
 
 # Ignore scaffold files
 #
