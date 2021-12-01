@@ -61,5 +61,10 @@
         "platform": {
             "php": "7.4"
         }
-    }
+    },
+    "scripts": {
+      "post-install-cmd": [
+          "rm -rf vendor/simplesamlphp/simplesamlphp/config && ln -sf ../../../web/private/simplesamlphp/config vendor/simplesamlphp/simplesamlphp/config && rm -rf vendor/simplesamlphp/simplesamlphp/metadata && ln -sf ../../../web/private/simplesamlphp/metadata vendor/simplesamlphp/simplesamlphp/metadata"
+      ]
+   }
 }
