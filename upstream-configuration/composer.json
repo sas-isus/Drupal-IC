@@ -86,7 +86,10 @@
         "drupal/xls_serialization": "^1.2",
         "simplesamlphp/simplesamlphp": "1.18.8",
         "drupal/bootstrap": "^3.23",
-        "drupal/adminimal_theme": "^1.6"
+        "drupal/adminimal_theme": "^1.6",
+        "drupal/linkit": "^6.0@beta",
+        "drupal/migrate_tools": "^5.0",
+        "drupal/migrate_plus": "^5.1"
     },
     "version": "1.0.2"
 }
