@@ -91,5 +91,13 @@
         "drupal/migrate_tools": "^5.0",
         "drupal/migrate_plus": "^5.1"
     },
+    "scripts": { 
+        "post-install-cmd": [ 
+            "rm -rf ../vendor/simplesamlphp/simplesamlphp/config && ln -sf ../../../../web/private/simplesamlphp/config ../vendor/simplesamlphp/simplesamlphp/config && rm -rf ../vendor/simplesamlphp/simplesamlphp/metadata && ln -sf ../../../../web/private/simplesamlphp/metadata ../vendor/simplesamlphp/simplesamlphp/metadata"
+        ] 
+      },
+      "post-update-cmd": [
+        "rm -rf ../vendor/simplesamlphp/simplesamlphp/config && ln -sf ../../../../web/private/simplesamlphp/config ../vendor/simplesamlphp/simplesamlphp/config && rm -rf ../vendor/simplesamlphp/simplesamlphp/metadata && ln -sf ../../../../web/private/simplesamlphp/metadata ../vendor/simplesamlphp/simplesamlphp/metadata"
+    ],
     "version": "1.0.2"
 }
