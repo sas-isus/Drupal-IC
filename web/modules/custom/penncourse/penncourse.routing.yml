@@ -35,9 +35,6 @@ penncourse.view:
     subj_code: 'all'
     level: 'all'
     _title_callback: '\Drupal\penncourse\Controller\PenncourseController::viewCourseTableTitle'
-    term: NULL
-    subj_code: 'all'
-    level: 'all'
   requirements:
     _permission: 'access content'
 
