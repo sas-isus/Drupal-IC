@@ -58,8 +58,14 @@ if (isset($_ENV['PANTHEON_ENVIRONMENT']) && php_sapi_name() != 'cli') {
 #  D8-refactored: $settings['simplesamlphp_dir'] = $_ENV['HOME'] .'/code/web/private/simplesamlphp';
 #
 if (isset($_ENV['HOME'])) {
-
-			$settings['simplesamlphp_dir'] = $_ENV['HOME'] . '/code/private/simplesamlphp';
+	if (isD8()) {
+		if (file_exists($_ENV['HOME'] . '/code/vendor/simplesamlphp/simplesamlphp/www/index.php')) {
+			$settings['simplesamlphp_dir'] = $_ENV['HOME'] . '/code/vendor/simplesamlphp/simplesamlphp';
+		}
+	}
+	else {
+		$conf['simplesamlphp_auth_installdir'] = $_ENV['HOME'] . '/code/private/simplesamlphp';
+	}
 }
 
 #
