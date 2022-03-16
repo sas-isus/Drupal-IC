@@ -90,7 +90,8 @@
         "drupal/linkit": "^6.0@beta",
         "drupal/migrate_tools": "^5.0",
         "drupal/migrate_plus": "^5.1",
-        "drupal/bootstrap_barrio": "^5.5"
+        "drupal/bootstrap_barrio": "^5.5",
+        "drupal/image_resize_filter": "^1.1"
     },
     "scripts": { 
         "post-install-cmd": [ 
