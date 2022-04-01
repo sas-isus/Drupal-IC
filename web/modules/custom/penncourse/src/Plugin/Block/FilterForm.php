@@ -64,7 +64,8 @@ class FilterForm extends BlockBase implements ContainerFactoryPluginInterface {
     // $form = \Drupal::formBuilder()->getForm('Drupal\penncourse\Form\PenncourseFilterForm');
     // return $form;
     $build = [];
-    $build['#markup'] = $this->renderer->render(\Drupal::formBuilder()->getForm('Drupal\penncourse\Form\PenncourseFilterForm'));
+    $f = \Drupal::formBuilder()->getForm('Drupal\penncourse\Form\PenncourseFilterForm');
+    $build['#markup'] = $this->renderer->render($f);    
     $build['#attached']['library'][] = 'penncourse/penncourse-form';
 
     return $build;
