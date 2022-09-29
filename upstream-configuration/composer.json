@@ -91,7 +91,8 @@
         "drupal/migrate_tools": "^5.0",
         "drupal/migrate_plus": "^5.1",
         "drupal/bootstrap_barrio": "^5.5",
-        "drupal/image_resize_filter": "^1.1"
+        "drupal/image_resize_filter": "^1.1",
+        "drupal/superfish": "^1.4"
     },
     "scripts": { 
         "post-install-cmd": [ 
