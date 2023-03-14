@@ -19,6 +19,8 @@ class PenncourseFilterForm extends FormBase {
    * @var \Drupal\penncourse\Service\PenncourseService
    */
   protected $penncourseService;
+  protected $currentPath;
+
   /**
    * Constructs a new PenncourseFilterForm object.
    */

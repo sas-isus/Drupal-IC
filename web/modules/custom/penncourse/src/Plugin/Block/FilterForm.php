@@ -24,6 +24,8 @@ class FilterForm extends BlockBase implements ContainerFactoryPluginInterface {
    * @var \Drupal\penncourse\Service\PenncourseService
    */
   protected $penncourseService;
+  protected $renderer;
+
   /**
    * Constructs a new FilterForm object.
    *
