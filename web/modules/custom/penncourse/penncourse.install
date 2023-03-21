@@ -4,6 +4,49 @@
  * Install file for penncourse module.
  */
 
+ use Drupal\field\Entity\FieldStorageConfig;
+
+/**
+ * Update node fields for migration to PHP 8.1.
+ */
+function penncourse_update_8001() {
+  // Array of field names to update
+  $fields_to_update = [
+    'field_pc_activity',
+    'field_pc_course_int',
+    'field_pc_course_no',
+    'field_pc_descr',
+    'field_pc_fulfills',
+    'field_pc_instructors',
+    'field_pc_level',
+    'field_pc_local_descr',
+    'field_pc_meeting',
+    'field_pc_section_id',
+    'field_pc_section_int',
+    'field_pc_section_no',
+    'field_pc_sec_reg_ctrl',
+    'field_pc_status',
+    'field_pc_subj_area',
+    'field_pc_term',
+    'field_pc_term_session',
+    'field_pc_title',
+    'field_pc_xlist',
+  ];
+
+  foreach ($fields_to_update as $field_name) {
+    // Get field storage definition
+    $field_storage = FieldStorageConfig::loadByName('node', $field_name);
+
+    // Update field storage definition
+    $field_storage->setSettings(['locked' => false]);
+    $field_storage->save();
+  }
+
+  // Clear cache
+  \Drupal::entityTypeManager()->clearCachedDefinitions();
+  
+}
+
 /**
  * Implements hook_install().
  */
