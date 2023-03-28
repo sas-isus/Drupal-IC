@@ -1,0 +1,11 @@
+name: 'Background Images Formatter'
+description: 'Background Images Formatter provides an image formatter to display images in background with CSS.'
+core_version_requirement: ^9.3 || ^10
+type: module
+dependencies:
+  - drupal:image
+
+# Information added by Drupal.org packaging script on 2022-11-09
+version: '8.x-1.16'
+project: 'bg_image_formatter'
+datestamp: 1668029841

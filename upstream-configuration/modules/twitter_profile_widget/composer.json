@@ -1,0 +1,18 @@
+{
+  "name": "drupal/twitter_profile_widget",
+  "type": "drupal-module",
+  "description": "Add multiple Twitter feeds as Drupal blocks.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://www.drupal.org/project/twitter_profile_widget",
+  "authors": [
+    {
+      "name": "Mark Fullmer",
+      "homepage": "https://www.drupal.org/u/mark_fullmer"
+    }
+  ],
+  "support": {
+    "issues": "http://drupal.org/project/issues/twitter_profile_widget",
+    "source": "https://git.drupalcode.org/project/twitter_profile_widget"
+  }
+}

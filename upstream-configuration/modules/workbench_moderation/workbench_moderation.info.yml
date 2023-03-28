@@ -1,0 +1,16 @@
+name: Workbench moderation
+type: module
+description: Provides moderation states for content
+core_version_requirement: ^9 || ^10
+package: Other
+configure: workbench_moderation.overview
+dependencies:
+  - drupal:views
+  - drupal:options
+test_dependencies:
+  - publishing_dropbutton:publishing_dropbutton
+
+# Information added by Drupal.org packaging script on 2022-11-18
+version: '8.x-1.7'
+project: 'workbench_moderation'
+datestamp: 1668804484
