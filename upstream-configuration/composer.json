@@ -96,7 +96,6 @@
         "drupal/nodeaccess": "^1.1",
         "drupal/auto_entitylabel": "^3.0",
         "drupal/views_taxonomy_term_name_depth": "^7.2",
-        "drupal/taxonomy_manager": "^2.0",
         "drupal/views_bulk_edit": "^2.9"
     },
     "scripts": { 
