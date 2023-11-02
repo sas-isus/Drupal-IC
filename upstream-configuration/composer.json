@@ -103,7 +103,8 @@
         "drupal/focal_point": "^2.0",
         "drupal/entity": "^1.4",
         "drupal/entity_embed": "^1.4",
-        "drupal/paragraphs_entity_embed": "^3.0"
+        "drupal/paragraphs_entity_embed": "^3.0",
+        "drupal/upgrade_status": "^4.0"
     },
     "scripts": { 
         "post-install-cmd": [ 
