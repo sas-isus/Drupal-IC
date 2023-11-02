@@ -93,7 +93,6 @@
         "drupal/bootstrap_barrio": "^5.5",
         "drupal/image_resize_filter": "^1.1",
         "drupal/superfish": "^1.4",
-        "drupal/nodeaccess": "^1.1",
         "drupal/auto_entitylabel": "^3.0",
         "drupal/views_taxonomy_term_name_depth": "^7.2",
         "drupal/views_bulk_edit": "^2.9",
