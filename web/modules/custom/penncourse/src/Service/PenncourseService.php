@@ -201,9 +201,10 @@ class PenncourseService {
    * @param string $term
    */
   public function getSectionNodesBySubjectTerm($subject_area, $term) {
-    $query = \Drupal::entityQuery('node');
-    $query->condition('type', 'pc_section');
-    $entity_ids = $query->execute();
+      $query = \Drupal::entityQuery('node')
+          ->accessCheck(FALSE)
+          ->condition('type', 'pc_section');
+      $entity_ids = $query->execute();
 
       $query = new EntityFieldQuery();
       $entity = $query->entityCondition('entity_type', 'node')
@@ -244,11 +245,11 @@ class PenncourseService {
    */
   function getCurrentTerm() {
       // get database information about course_course_id field
-      $term = date('Y', REQUEST_TIME);
-      if ((date('n', REQUEST_TIME) <= 5) && ((date('j', REQUEST_TIME) <= 20) || (date('n', REQUEST_TIME) <= 4))) {
+      $term = date('Y', \Drupal::time()->getRequestTime());
+      if ((date('n', \Drupal::time()->getRequestTime()) <= 5) && ((date('j', \Drupal::time()->getRequestTime()) <= 20) || (date('n', \Drupal::time()->getRequestTime()) <= 4))) {
           $term .= 'A';
       }
-      elseif ((date('n', REQUEST_TIME) <= 8) && ((date('j', REQUEST_TIME) <= 15) || (date('n', REQUEST_TIME) <= 7))) {
+      elseif ((date('n', \Drupal::time()->getRequestTime()) <= 8) && ((date('j', \Drupal::time()->getRequestTime()) <= 15) || (date('n', \Drupal::time()->getRequestTime()) <= 7))) {
           $term .= 'B';
       }
       else {
@@ -488,7 +489,7 @@ class PenncourseService {
     		  // The node entity bundle.
     		  'type' => 'pc_section',
     		  'langcode' => LanguageInterface::LANGCODE_NOT_SPECIFIED,
-    		  'created' => REQUEST_TIME,
+    		  'created' => \Drupal::time()->getRequestTime(),
     		  // The user ID.
     		  'uid' => $penncourse_user->id(),
     		  'moderation_state' => 'published',

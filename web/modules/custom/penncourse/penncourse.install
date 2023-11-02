@@ -61,9 +61,10 @@ function penncourse_install() {
 function penncourse_uninstall() {
   // Delete pc_section nodes when uninstalling
   $query = \Drupal::entityQuery('node')
+    ->accessCheck(FALSE)
     ->condition('type', 'pc_section');
   $nids = $query->execute();
-  debug($nids);
+  dump($nids);
   foreach ($nids as $nid) {
     \Drupal\node\Entity\Node::load($nid)->delete();
   }
