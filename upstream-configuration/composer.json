@@ -105,8 +105,7 @@
         "drupal/entity_embed": "^1.4",
         "drupal/paragraphs_entity_embed": "^3.0",
         "drupal/upgrade_status": "^4.0",
-        "drupal/better_exposed_filters": "^6.0",
-        "drupal/aggregator": "^2.2"
+        "drupal/better_exposed_filters": "^6.0"
     },
     "scripts": { 
         "post-install-cmd": [ 
