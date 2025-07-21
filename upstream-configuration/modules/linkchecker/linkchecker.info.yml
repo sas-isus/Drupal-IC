@@ -1,0 +1,12 @@
+name: 'Link checker'
+type: module
+description: 'Periodically checks for broken links in content.'
+core_version_requirement: ^9.4 || ^10.0 || ^11
+configure: linkchecker.admin_settings_form
+test_dependencies:
+  - redirect:redirect
+
+# Information added by Drupal.org packaging script on 2025-06-29
+version: '2.0.1'
+project: 'linkchecker'
+datestamp: 1751178545
