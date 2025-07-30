@@ -52,6 +52,9 @@
                     "mode": "replace",
                     "path": "web/core/assets/scaffold/files/htaccess",
                     "overwrite": false
+                },
+                "[web-root]/robots.txt": {
+                    "append": "web/assets/robots-additions.txt"
                 }
             }
         }
