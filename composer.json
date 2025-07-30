@@ -54,7 +54,7 @@
                     "overwrite": false
                 },
                 "[web-root]/robots.txt": {
-                    "append": "web/assets/robots-additions.txt"
+                    "append": "web/assets/robots-addition.txt"
                 }
             }
         }
