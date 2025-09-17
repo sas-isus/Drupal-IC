@@ -107,7 +107,11 @@
         "drupal/upgrade_status": "^4.0",
         "drupal/better_exposed_filters": "^6.0",
 		"drupal/editor_file": "^1.8.0",
-		"drupal/linkchecker": "^2.0.1"
+		"drupal/linkchecker": "^2.0.1",
+        "drupal/drupal8_zymphonies_theme": "^3.0",
+        "drupal/antibot": "^2.0",
+        "drupal/flood_control": "^2.3"
+
     },
     "scripts": { 
         "post-install-cmd": [ 
