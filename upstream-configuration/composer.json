@@ -129,6 +129,16 @@
             "drupal/core-composer-scaffold": true,
             "zaporylie/composer-drupal-optimizations": true,
             "simplesamlphp/composer-module-installer": true
+        },
+    "audit": {
+        "ignore": ["CVE-2024-45411", "PKSA-yhcn-xrg3-68b1", "PKSA-2wrf-1xmk-1pky",
+                        "PKSA-yhcn-xrg3-68b1", "PKSA-2wrf-1xmk-1pky",
+                        "PKSA-yfw5-9gnj-n2c7", "PKSA-k1b4-kshy-xgbh", "PKSA-2z36-j4q9-rsfy", "PKSA-fvw5-9t6n-nwvr", "PKSA-6d8m-6kgw-18zr",
+                            "PKSA-hn62-zkx4-1y5q", "PKSA-gvzg-s447-b5b5",
+                        "PKSA-yfw5-9gnj-n2c7", "PKSA-k1b4-kshy-xgbh", "PKSA-2z36-j4q9-rsfy", "PKSA-fvw5-9t6n-nwvr", "PKSA-6d8m-6kgw-18zr",
+                        "PKSA-yg4s-vh6g-jnyh", "PKSA-wdyb-c3m7-9v88",
+                        "PKSA-365x-2zjk-pt47", "PKSA-b35n-565h-rs4q",
+                        "PKSA-yhcn-xrg3-68b1", "PKSA-2wrf-1xmk-1pky", "PKSA-6319-ffpf-gx66"] 
         }
     }
 }
